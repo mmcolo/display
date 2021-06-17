@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+        dayNamesMin: [ "Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa" ],
+        monthNames: [ "Jan", "Fév", "Mar", "Avr", "Mai", "Jun", "Jul", "Aoû", "Sep", "Oct", "Nov", "Dec" ],
+        firstDay: 1,
+        prevText: "<",
+        nextText: ">",
+});
+    $( "#datepicker" ).datepicker("show");
+  } );
+  </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Rendez-vous.</h1>
+        <form class="form-model">
+            <div class="form-ctrl">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom">
+            </div>
+            <div class="form-ctrl">
+                <label for="tel">Tel</label>
+                <input type="text" id="tel">
+            </div>
+            <div class="form-ctrl">
+                <label for="datepicker">Date</label>
+                <input type="text" id="datepicker">
+            </div>
+            <button type="submit" class="submit"> Envoyer</button>
+        </form>
+    </div> 
+</body>
+</html>

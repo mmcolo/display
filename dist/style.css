@@ -1,0 +1,148 @@
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 10%;
+    color: white;
+}
+.form-model{
+    width: 350px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;background-color: black;
+    padding: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.form-model label{
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+.form-model input{
+    height: 40px;
+    width: 350px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.form-ctrl{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 18px;
+    color: grey;
+    margin-top: 20px;
+}
+.submit{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    color: black;
+    transition-duration: 0.5s;
+}
+.submit:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transition-duration: 0.5s;
+}
+
+/*///Calandrier//*/
+.ui-datepicker{
+    width: 300px;
+    height: 300px;
+    color: white ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ui-datepicker-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px 5px 0 0;
+    padding-top: 15px;
+    width: 350px;
+
+}
+.ui-datepicker-title{
+    color: white;
+    width: 100px;
+    height: 30px;
+    order: 2;
+}
+.ui-datepicker-next{
+    order: 3;
+}
+.ui-datepicker-prev{
+    order: 1;
+}
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition-duration: 0.5;
+}
+.ui-datepicker-prev, .ui-datepicker-next{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 5px;
+    transition-duration: 0.5;
+}
+
+.ui-datepicker-month, .ui-datepicker-year{
+    font-size: 22px;
+}
+
+.ui-datepicker-calendar{
+    width: 350px;
+    height: 350px;
+    color: grey;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+.ui-datepicker-today{
+    text-decoration: none;
+    border: 1 solid red;
+    border-radius: 3px;
+}
+table .ui-state-default{
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    transition-duration: 0.25s;
+}
+
+tr td{
+    width: 100px;
+    height: 70px;
+}
+.ui-datepicker-current-day{
+    background-color: lightcoral;
+    border-radius: 50%;
+    transition-duration: 0.25s;
+}
+.ui-datepicker-current-day:hover, table .ui-state-default:hover{
+    background-color: grey;
+    border-radius: 5px;
+    transition-duration: 0.25s;
+}
